@@ -14,6 +14,7 @@ function PlaygroundScreen(screenProperties, gameInstance) {
     this.snake = new Snake(this.rows, this.cols, this.wx, this.wy)
     this._spawnFood();
     this.isGameOn = true;
+    this.score = 0;
     loop();
   }.bind(this)
 
