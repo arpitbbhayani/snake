@@ -9,8 +9,9 @@ var screenProperties = {
 }
 
 function setup() {
-  screenProperties.width = windowWidth;
-  screenProperties.height = windowHeight;
+  var size = min(windowWidth - 10, windowHeight - 10, 640)
+  screenProperties.width = size;
+  screenProperties.height = size;
   gameCanvas = createCanvas(screenProperties.width, screenProperties.height);
   gameCanvas.parent('sketch');
   game = new Game(screenProperties);

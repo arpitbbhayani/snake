@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background: #000;
 }
 
 body {
@@ -7,4 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#sketch {
+  border: 1px solid #fff;
 }

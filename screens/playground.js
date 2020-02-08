@@ -62,9 +62,9 @@ function PlaygroundScreen(screenProperties, gameInstance) {
   }.bind(this)
 
   this._drawScore = function() {
-    textSize(32);
+    textSize(24);
     textFont('monospace');
-    text('Score: ' + this.score, 10, 30);
+    text(this.score, 10, 30);
     fill(255, 255, 255);
   }.bind(this)
 
